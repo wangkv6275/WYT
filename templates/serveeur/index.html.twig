@@ -3,22 +3,45 @@
 {% block title %}Hello ServeeurController!{% endblock %}
 
 {% block body %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>enregiste</title>
+   {% block stylesheets %} <link rel='stylesheet' href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:500,700&amp;display=swap'>
+    <link rel="stylesheet" href="./style.css">{% endblock %}
+</head>
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Serveur de fichiers</h1>
+  <form>
 
-  Bienvenu sur mon serveur de fichier.
-  <p>
-  Vous devez vous connecter :
-  </p>
-	WangYuting-(GroupL)
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/phpstudy_pro/WWW/symfony/test1/src/Controller/ServeeurController.php'|file_link(0) }}">src/Controller/ServeeurController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/phpstudy_pro/WWW/symfony/test1/templates/serveeur/index.html.twig'|file_link(0) }}">templates/serveeur/index.html.twig</a></code></li>
-    </ul>
-</div>
+        <div class="segment">
+            <h1>Sign up</h1>
+        </div>
+
+        <label>
+            <input type="text" placeholder="Email Address" />
+        </label>
+        <label>
+            <input type="password" placeholder="Password" />
+        </label>
+        <button class="red" type="button"><i class="icon ion-md-lock"></i> Log in</button>
+
+        <div class="segment">
+            <button class="unit" type="button"><i class="icon ion-md-arrow-back"></i></button>
+            <button class="unit" type="button"><i class="icon ion-md-bookmark"></i></button>
+            <button class="unit" type="button"><i class="icon ion-md-settings"></i></button>
+        </div>
+
+        <div class="input-group">
+            <label>
+                <input type="text" placeholder="Email Address" />
+            </label>
+            <button class="unit" type="button"><i class="icon ion-md-search"></i></button>
+        </div>
+
+    </form>
 {% endblock %}
